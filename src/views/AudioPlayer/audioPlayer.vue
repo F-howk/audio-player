@@ -7,7 +7,7 @@
 		<div>
 			<SongInfo />
 		</div>
-		<div>
+		<div class="list-box">
 			<Collect />
 			<PlayList />
 		</div>
@@ -37,6 +37,14 @@ import PlayList from './components/PlayList/indexPage.vue'
 		flex: 1;
 		&:nth-child(1) {
 			border-left: 1px solid #dcdfe6;
+		}
+	}
+	.list-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		& > div {
+			flex: 1;
 		}
 	}
 }
